@@ -1,0 +1,34 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=0&size=4
+
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "programa para Daniel",
+    "description": "Condominio"
+}
+
+###
+GET http://localhost:3000/api/tasks/60b1e8f743eb2e475cbb4566
+
+###
+DELETE http://localhost:3000/api/tasks/60aa84e382a315361845055d
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/60aa851d3ca66b42a80ffc03
+Content-Type: application/json
+
+{
+    "title": "la tabla fue pintada",
+    "description": "la chimeneaaaaa"
+}
